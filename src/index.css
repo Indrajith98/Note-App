@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1em;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px;
+}
+
+.note.new {
+  background-color: rgb(223, 187, 27);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(223, 187, 27);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  color: rgb(29, 28, 28);
+}
+
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #494646;
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgba(233, 233, 233);
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.search input {
+  border: none;
+  background-color: rgba(233, 233, 233);
+  width: 100%;
+  padding: 5px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+}
+.note {
+  background-color: rgb(65, 235, 235);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bodyDarkMode { 
+  background-color: #000;
+}
+
+.bodyDarkMode h2 {
+  color: #ffffff;
+}
+
+.darkmode-btn {
+  padding: 10px 30px 10px 30px;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(233, 233, 233);
+  cursor: pointer;
+}
+
+.darkmode-btn:hover {
+  background-color: rgb(153, 146, 146);
+  transition: 0.3s ease;
+  color : #ffffff
+}
